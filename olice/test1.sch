@@ -1876,9 +1876,9 @@ Wire Wire Line
 	6700 4050 6350 4050
 Connection ~ 6350 4050
 Wire Wire Line
-	7550 3850 10100 3850
+	7550 3850 9250 3850
 Wire Wire Line
-	14350 3850 16900 3850
+	14350 3850 15200 3850
 NoConn ~ 1550 3150
 NoConn ~ 7150 2750
 Text GLabel 2250 3550 2    50   Input ~ 0
@@ -1919,4 +1919,60 @@ Text GLabel 2250 1550 2    50   Input ~ 0
 col3
 Text GLabel 2250 3050 2    50   Input ~ 0
 col2
+$Comp
+L Device:D D46
+U 1 1 607FBDCA
+P 9250 3700
+F 0 "D46" V 9296 3620 50  0000 R CNN
+F 1 "D" V 9205 3620 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 9250 3700 50  0001 C CNN
+F 3 "~" H 9250 3700 50  0001 C CNN
+	1    9250 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 9250 3850
+Wire Wire Line
+	9250 3850 10100 3850
+$Comp
+L keyboard_parts:KEYSW K45
+U 1 1 607FC407
+P 9550 3550
+F 0 "K45" H 9550 3783 60  0000 C CNN
+F 1 "KEYSW" H 9550 3450 60  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 9550 3550 60  0001 C CNN
+F 3 "" H 9550 3550 60  0000 C CNN
+	1    9550 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 3050 9850 3550
+Connection ~ 9850 3050
+$Comp
+L Device:D D47
+U 1 1 608063E0
+P 15200 3700
+F 0 "D47" V 15246 3620 50  0000 R CNN
+F 1 "D" V 15155 3620 50  0000 R CNN
+F 2 "Diode_SMD:D_SOD-123" H 15200 3700 50  0001 C CNN
+F 3 "~" H 15200 3700 50  0001 C CNN
+	1    15200 3700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 15200 3850
+Wire Wire Line
+	15200 3850 16900 3850
+$Comp
+L keyboard_parts:KEYSW K46
+U 1 1 6080699D
+P 15500 3550
+F 0 "K46" H 15500 3783 60  0000 C CNN
+F 1 "KEYSW" H 15500 3450 60  0001 C CNN
+F 2 "Button_Switch_Keyboard:SW_Cherry_MX_1.00u_Plate" H 15500 3550 60  0001 C CNN
+F 3 "" H 15500 3550 60  0000 C CNN
+	1    15500 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15800 3050 15800 3550
+Connection ~ 15800 3050
 $EndSCHEMATC
